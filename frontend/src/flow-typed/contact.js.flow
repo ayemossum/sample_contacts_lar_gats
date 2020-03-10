@@ -1,0 +1,7 @@
+//@flow
+declare type Contact = {
+    id?: Number,
+    firstname: string,
+    lastname: string,
+    email: string
+};

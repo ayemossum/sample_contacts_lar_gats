@@ -1,0 +1,57 @@
+.edit-contact-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 2.5em 0 4em;
+
+    .edit-contact-label {
+        line-height: 2.7em;
+    }
+
+    .edit-contact-control {
+        margin: 5px 0 5px 2px;
+
+        input {
+            padding: 4px;
+        }
+    }
+}
+.edit-contact-header {
+    height: 2em;
+    line-height: 2em;
+    background-color: #2020a0;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+
+    .close-button {
+        cursor: pointer;
+        float: right;
+        padding-right: 10px;
+    }
+}
+.edit-contact-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 25px;
+
+    button {
+        float: right;
+        padding: 0 10px;
+        height: 2em;
+        line-height: 1.7em;
+        border-radius: 10px;
+        background-color: #3030b0;
+        color: #fff;
+        margin: 0 5px;
+        cursor: pointer;
+
+        &.cancel {
+            background-color: #a02020;
+        }
+    }
+}

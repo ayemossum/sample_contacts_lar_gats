@@ -5,12 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Modal from "react-modal"
 
 import Header from "./header"
-import "./layout.css"
+import "./layout.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -22,6 +23,8 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
+  useEffect(() => Modal.setAppElement("#gatsby-focus-wrapper"), []);
 
   return (
     <>

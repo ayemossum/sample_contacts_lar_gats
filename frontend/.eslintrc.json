@@ -1,0 +1,29 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:flowtype/recommended"
+    ],
+    "ecmaFeatures": {
+        "impliedStrict": true,
+        "jsx": true,
+        "arrowFunctions": true,
+        "blockBindings": true,
+        "classes": true,
+        "defaultParams": true,
+        "spread": true
+    },
+    "plugins": [
+        "react",
+        "flowtype"
+    ]
+}
